@@ -1,0 +1,123 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Nome e Idade</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    label, input {
+      display: block;
+      margin-bottom: 10px;
+    }
+    #resposta {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Informe seu nome e idade</h1>
+
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome">
+
+  <label for="idade">Idade:</label>
+  <input type="number" id="idade">
+
+  <button onclick="mostrarDados()">Enviar</button>
+
+  <div id="resposta"></div>
+
+  <script>
+    function mostrarDados() {
+      const nome = document.getElementById("nome").value;
+      const idade = document.getElementById("idade").value;
+      const resposta = document.getElementById("resposta");
+
+      resposta.innerHTML = `Seu nome é <strong>${nome}</strong> e sua idade é <strong>${idade}</strong> anos.`;
+    }
+  </script>
+
+</body>
+</html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teste1 feito por lucas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    label, input {
+      display: block;
+      margin-bottom: 10px;
+    }
+    #resposta {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+/* Estilo padrão (desktop) */
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Para celulares: */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  label, input {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #resposta {
+    margin-top: 20px;
+    font-weight: bold;
+  }/* Estilo padrão (desktop) */
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Para celulares: */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+cellphone {
+  font-size: 14px;
+}
+  /* Estilo padrão (desktop) */
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+
+  /* Para celulares: */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 10px;
+    }
+  }
